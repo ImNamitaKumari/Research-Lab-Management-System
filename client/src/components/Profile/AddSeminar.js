@@ -58,7 +58,7 @@ export class AddSeminar extends Component {
 
     console.log(seminar);
 
-    axios.post('http://localhost:5000/research/seminar/add', seminar)
+    axios.post('https://rlms-backend.onrender.com/research/seminar/add', seminar)
       .then(res => console.log(res.data));
 
     window.location = '/';

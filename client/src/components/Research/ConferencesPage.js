@@ -22,7 +22,7 @@ export class ConferencesPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/research/conference/')
+    axios.get('https://rlms-backend.onrender.com/research/conference/')
       .then(response => {
         this.setState({ conferences: response.data })
       })

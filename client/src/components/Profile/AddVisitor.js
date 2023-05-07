@@ -58,7 +58,7 @@ export class AddVisitor extends Component {
 
     console.log(visitor);
 
-    axios.post('http://localhost:5000/member/visitor/add', visitor)
+    axios.post('https://rlms-backend.onrender.com/member/visitor/add', visitor)
       .then(res => console.log(res.data));
 
     window.location = '/';

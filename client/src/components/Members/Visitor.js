@@ -30,7 +30,7 @@ export class Visitor extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/member/visitor/')
+    axios.get('https://rlms-backend.onrender.com/member/visitor/')
       .then(response => {
         this.setState({ visitors: response.data })
       })

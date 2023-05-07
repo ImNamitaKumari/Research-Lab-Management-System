@@ -14,7 +14,7 @@ export class SeminarsPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/research/seminar/')
+    axios.get('https://rlms-backend.onrender.com/research/seminar/')
       .then(response => {
         this.setState({ seminars: response.data })
       })

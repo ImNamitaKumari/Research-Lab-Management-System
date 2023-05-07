@@ -49,7 +49,7 @@ export class AddPublication extends Component {
 
     console.log(publication);
 
-    axios.post('http://localhost:5000/research/publication/add', publication)
+    axios.post('https://rlms-backend.onrender.com/research/publication/add', publication)
       .then(res => console.log(res.data));
 
     window.location = '/';

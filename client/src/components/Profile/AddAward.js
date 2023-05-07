@@ -58,7 +58,7 @@ export class AddAward extends Component {
 
     console.log(award);
 
-    axios.post('http://localhost:5000/research/award/add', award)
+    axios.post('https://rlms-backend.onrender.com/research/award/add', award)
       .then(res => console.log(res.data));
 
     window.location = '/';

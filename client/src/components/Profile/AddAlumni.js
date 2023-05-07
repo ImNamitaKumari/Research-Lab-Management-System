@@ -94,7 +94,7 @@ export class AddAlumni extends Component {
 
     console.log(alumni);
 
-    axios.post('http://localhost:5000/member/alumni/add', alumni)
+    axios.post('https://rlms-backend.onrender.com/member/alumni/add', alumni)
       .then(res => console.log(res.data));
 
     window.location = '/';

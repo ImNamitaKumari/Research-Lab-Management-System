@@ -14,7 +14,7 @@ export class AwardsPage extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/research/award/')
+    axios.get('https://rlms-backend.onrender.com/research/award/')
       .then(response => {
         this.setState({ awards: response.data })
       })

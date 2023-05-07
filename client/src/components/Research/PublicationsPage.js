@@ -23,7 +23,7 @@ export default class PublicationsPage extends Component {
   }
 
 	componentDidMount() {
-    axios.get('http://localhost:5000/research/publication/')
+    axios.get('https://rlms-backend.onrender.com/research/publication/')
       .then(response => {
         this.setState({ publications: response.data })
       })

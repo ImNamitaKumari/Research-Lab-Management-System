@@ -33,7 +33,7 @@ export class Student extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/member/student/')
+    axios.get('https://rlms-backend.onrender.com/member/student/')
       .then(response => {
         this.setState({ students: response.data })
       })

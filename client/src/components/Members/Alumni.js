@@ -35,7 +35,7 @@ export default class Alumni extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/member/alumni/')
+    axios.get('https://rlms-backend.onrender.com/member/alumni/')
       .then(response => {
         this.setState({ alumnis: response.data })
       })

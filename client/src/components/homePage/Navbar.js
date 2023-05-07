@@ -14,7 +14,7 @@ function Navbar(){
      useEffect(() => {
       if (userInfo.email) {
        axios
-         .get("http://localhost:5000/user", { withCredentials: true })
+         .get("https://rlms-backend.onrender.com/user", { withCredentials: true })
          .then((response) => {
            setEmail(response.data.email);
          });
@@ -23,7 +23,7 @@ function Navbar(){
 
      function logout() {
        axios
-         .post("http://localhost:5000/logout", {}, { withCredentials: true })
+         .post("https://rlms-backend.onrender.com/logout", {}, { withCredentials: true })
          .then(() => setEmail(""));
      }
 

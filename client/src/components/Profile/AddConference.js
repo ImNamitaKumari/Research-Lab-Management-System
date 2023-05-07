@@ -87,7 +87,7 @@ export class AddConference extends Component {
 
     console.log(conference);
 
-    axios.post('http://localhost:5000/research/conference/add', conference)
+    axios.post('https://rlms-backend.onrender.com/research/conference/add', conference)
       .then(res => console.log(res.data));
 
     window.location = '/';

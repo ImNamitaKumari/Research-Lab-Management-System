@@ -30,7 +30,7 @@ export class Mentor extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/member/mentor/')
+    axios.get('https://rlms-backend.onrender.com/member/mentor/')
       .then(response => {
         this.setState({ mentors: response.data })
       })
